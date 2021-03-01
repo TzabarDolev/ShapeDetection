@@ -49,12 +49,6 @@ Precision: <br>
 Recall: <br>
 
 
-<h5>Things I would have done i i had some spare time:</h5><br>
-1. Add tqdm to long loops<br>
-2. Add legends to graphs<br>
-3. Try again using cv2.findcountours<br>
-4. Add a code to automatically create the resulats folder if it doesn't exist
-
 <h5>Images: </h5>
 Top 5 IOU:
 (https://github.com/TzabarDolev/ShapeDetection/blob/main/IOU_top_k.jpg?raw=true)<br>
@@ -76,3 +70,12 @@ Recall comparison:
 (https://github.com/TzabarDolev/ShapeDetection/blob/main/recall_comparison.jpg?raw=true)<br>
 Recall doesn't look good, but recall calculates TP/(TP+FN), and once almost everything is being marked, there aren't any FN.
 
+
+
+<h5>Things I would have done i i had some spare time:</h5><br>
+1. Add tqdm to long loops<br>
+2. Add legends to graphs<br>
+3. Try again using cv2.findcountours<br>
+4. Add a code to automatically create the resulats folder if it doesn't exist<br>
+5. Automate show_results.py file<br>
+6. Create a fast-track for a simngle specific image<br>
