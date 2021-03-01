@@ -4,6 +4,8 @@ import os
 import cv2
 import numpy as np
 
+import tqdm
+
 from shape_detection import detect_lines, detect_circles, seperate_images
 
 

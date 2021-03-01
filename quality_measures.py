@@ -73,7 +73,7 @@ if __name__ == '__main__':
 
         # measuring IOU, precision and recall
         # sometimes it's zero so i added this to the safe side
-        results_precision.append(GT_results_compare["TP"] / (GT_results_compare["TP"] + GT_results_compare["FP"]) + 0.001)
+        results_precision.append(GT_results_compare["TP"] / (GT_results_compare["TP"] + GT_results_compare["FP"] + 0.001))
         pred_precision.append(GT_pred_compare["TP"] / (GT_pred_compare["TP"] + GT_pred_compare["FP"]))
         pred_recall.append(GT_pred_compare["TP"] / (GT_pred_compare["TP"] + GT_pred_compare["FN"]))
         results_recall.append(GT_results_compare["TP"] / (GT_results_compare["TP"] + GT_results_compare["FN"]))
