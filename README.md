@@ -57,22 +57,22 @@ Recall: <br>
 
 <h5>Images: </h5>
 Top 5 IOU:
-(https://github.com/TzabarDolev/ShapeDetection/blob/main/IOU_top_k.jpg?raw=true)
+(https://github.com/TzabarDolev/ShapeDetection/blob/main/IOU_top_k.jpg?raw=true)<br>
 Worst 5 IOU:
-(https://github.com/TzabarDolev/ShapeDetection/blob/main/IOU_worst_k.jpg?raw=true)
+(https://github.com/TzabarDolev/ShapeDetection/blob/main/IOU_worst_k.jpg?raw=true)<br>
 IOU comparison:
-(https://github.com/TzabarDolev/ShapeDetection/blob/main/IOU_comparison.jpg?raw=true)
+(https://github.com/TzabarDolev/ShapeDetection/blob/main/IOU_comparison.jpg?raw=true)<br>
 Top 5 precision:
-(https://github.com/TzabarDolev/ShapeDetection/blob/main/precision_top_k.jpg?raw=true)
+(https://github.com/TzabarDolev/ShapeDetection/blob/main/precision_top_k.jpg?raw=true)<br>
 Worst 5 precision:
-(https://github.com/TzabarDolev/ShapeDetection/blob/main/precision_worst_k.jpg?raw=true)
+(https://github.com/TzabarDolev/ShapeDetection/blob/main/precision_worst_k.jpg?raw=true)<br>
 Precision comparison:
-(https://github.com/TzabarDolev/ShapeDetection/blob/main/precision_comparison.jpg?raw=true)
+(https://github.com/TzabarDolev/ShapeDetection/blob/main/precision_comparison.jpg?raw=true)<br>
 Top 5 recall:
-(https://github.com/TzabarDolev/ShapeDetection/blob/main/recall_top_k.jpg?raw=true)
+(https://github.com/TzabarDolev/ShapeDetection/blob/main/recall_top_k.jpg?raw=true)<br>
 Worst 5 recall:
-(https://github.com/TzabarDolev/ShapeDetection/blob/main/recall_worst_k.jpg?raw=true)
+(https://github.com/TzabarDolev/ShapeDetection/blob/main/recall_worst_k.jpg?raw=true)<br>
 Recall comparison:
 (https://github.com/TzabarDolev/ShapeDetection/blob/main/recall_comparison.jpg?raw=true)
-
+Recall doesn't look good, but recall calculates TP/(TP+FN), and once almost everything is being marked, there aren't any FN.
 
