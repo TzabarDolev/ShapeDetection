@@ -10,6 +10,8 @@ The mission is to find as many objects as possible, get their correct classifica
 **Project requirements appear at requirements.txt file**
 
 **Usage:**<br>
+First of all: after cloning the repo - add the images, ground truth and predictions to the appropriate folders<br>
+
 To display an image with ground truth, prediction and my results:<br>
 `python3 demo.py`
 
