@@ -36,7 +36,8 @@ Quality measures metrics chosen:<br>
 
 <h5>Prediction algo: </h5>
 First of all, breaking the images to different images for circles and for triangles (most of the images are obvious - spheres are red and triangles are green. for those who are not - well, that's a sacrifice i'm willing to make. sort of. After all, I didn't want to be SOTA, I wanted to do something **good** at somewhat close to 8 hours.<br>
-After I seperated the images I used the triangles alone as a seperate input to locate **lines**, and the entire image to locate circles (the detection was better for the original image than the circles seperated image).<br>
+After I seperated the images I used the triangles alone as a seperate input to locate **lines** using canny and hough lines, and the entire image to locate circles (the detection was better for the original image than the circles seperated image) using hough circles.<br>
+I wanted to use simple tools like image gradients and color changes so opencv is a great catch for these ones. Also, we wanted to stay with *classic computer vision* so we didn't need here some big guns like attention, keypoints and CNNs.<br>
 Detection algo ends with a json dump to the results folder. It's important to create this because I didn't create it automatically (8 hours and so).
 **python3 quality_measures.py** will give you dataframes of all performances in **pred_performance.txt** and **results_performacen.txt**.<br>
 Use the **python3 show_results.py** to see the top and worst k predictions, and also see comparioson graphs. <br>
@@ -45,8 +46,7 @@ The comparison graphs were meant to give the trend of the images. So if some loc
 <h5>Performance:</h5>
 IOU: <br>
 Precision: <br>
-Recall: 
-
+Recall: <br>
 
 
 <h5>Things I would have done i i had some spare time:</h5><br>
