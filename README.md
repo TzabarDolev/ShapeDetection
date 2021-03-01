@@ -57,7 +57,7 @@ Recall: <br>
 
 <h5>Images: </h5>
 Top 5 IOU:
-![alt text](https://github.com/TzabarDolev/ShapeDetection/blob/main/IOU_top.jpg?raw=true)
+![alt text](https://github.com/TzabarDolev/ShapeDetection/blob/main/recall_top%20.jpg?raw=true)
 
 Worst 5 IOU:
 
