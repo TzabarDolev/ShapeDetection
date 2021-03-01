@@ -57,23 +57,22 @@ Recall: <br>
 
 <h5>Images: </h5>
 Top 5 IOU:
-![alt text](https://github.com/TzabarDolev/ShapeDetection/blob/main/recall_top%20.jpg?raw=true)
-
+(https://github.com/TzabarDolev/ShapeDetection/blob/main/IOU_top_k.jpg?raw=true)
 Worst 5 IOU:
-
+(https://github.com/TzabarDolev/ShapeDetection/blob/main/IOU_worst_k.jpg?raw=true)
 IOU comparison:
-
+(https://github.com/TzabarDolev/ShapeDetection/blob/main/IOU_comparison.jpg?raw=true)
 Top 5 precision:
-
+(https://github.com/TzabarDolev/ShapeDetection/blob/main/precision_top_k.jpg?raw=true)
 Worst 5 precision:
-
+(https://github.com/TzabarDolev/ShapeDetection/blob/main/precision_worst_k.jpg?raw=true)
 Precision comparison:
-
+(https://github.com/TzabarDolev/ShapeDetection/blob/main/precision_comparison.jpg?raw=true)
 Top 5 recall:
-
+(https://github.com/TzabarDolev/ShapeDetection/blob/main/recall_top_k.jpg?raw=true)
 Worst 5 recall:
-
+(https://github.com/TzabarDolev/ShapeDetection/blob/main/recall_worst_k.jpg?raw=true)
 Recall comparison:
-
+(https://github.com/TzabarDolev/ShapeDetection/blob/main/recall_comparison.jpg?raw=true)
 
 
