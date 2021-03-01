@@ -73,6 +73,6 @@ Top 5 recall:
 Worst 5 recall:
 (https://github.com/TzabarDolev/ShapeDetection/blob/main/recall_worst_k.jpg?raw=true)<br>
 Recall comparison:
-(https://github.com/TzabarDolev/ShapeDetection/blob/main/recall_comparison.jpg?raw=true)
+(https://github.com/TzabarDolev/ShapeDetection/blob/main/recall_comparison.jpg?raw=true)<br>
 Recall doesn't look good, but recall calculates TP/(TP+FN), and once almost everything is being marked, there aren't any FN.
 
