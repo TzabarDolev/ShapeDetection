@@ -36,7 +36,7 @@ def show_topk(df, k):
     recall_top = df.nlargest(k, 'recall')
 
     series = [IOU_worst, IOU_top, precision_worst, precision_top, recall_worst, recall_top]
-    titles = ['IOU_worst ', 'IOU_top ', 'precision_worst ', 'precision_top ', 'recall_worst ', 'recall_top ']
+    titles = ['IOU_worst_k', 'IOU_top_k', 'precision_worst_k', 'precision_top_k', 'recall_worst_k', 'recall_top_k']
 
     img_path = 'img/'
     for data in range(len(series)):
@@ -59,7 +59,7 @@ def show_topk(df, k):
                 type = 'recall'
             plt.title(str(series[data][type].values[plot]))
         # plt.show()
-        plt.savefig(str(titles[data]) + '.jpg')
+        plt.savefig('assets/' + str(titles[data]) + '.jpg')
 
 
 if __name__ == '__main__':
@@ -78,7 +78,7 @@ if __name__ == '__main__':
     axs[0].set_title('my results IOU')
     axs[1].plot(x, df_pred["IOU"].values)
     axs[1].set_title('prediction IOU')
-    plt.savefig('IOU_comparison.jpg')
+    plt.savefig('assets/' + 'IOU_comparison.jpg')
 
     fig, axs = plt.subplots(2, sharex=True, sharey=True)
     fig.suptitle('precision comparison')
@@ -86,7 +86,7 @@ if __name__ == '__main__':
     axs[0].set_title('my results precision')
     axs[1].plot(x, df_pred["precision"].values)
     axs[1].set_title('prediction precision')
-    plt.savefig('precision_comparison.jpg')
+    plt.savefig('assets/' + 'precision_comparison.jpg')
 
     fig, axs = plt.subplots(2, sharex=True, sharey=True)
     fig.suptitle('recall comparison')
@@ -94,5 +94,5 @@ if __name__ == '__main__':
     axs[0].set_title('my results recall')
     axs[1].plot(x, df_pred["recall"].values)
     axs[1].set_title('prediction recall')
-    plt.savefig('recall_comparison.jpg')
+    plt.savefig('assets/' + 'recall_comparison.jpg')
     plt.show()
