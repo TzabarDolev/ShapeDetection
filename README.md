@@ -70,7 +70,7 @@ Recall comparison:
 (https://github.com/TzabarDolev/ShapeDetection/blob/main/recall_comparison.jpg?raw=true)<br>
 Recall doesn't look good, but recall calculates TP/(TP+FN), and once almost everything is being marked, there aren't any FN.
 
-<img src="precision_comparison.jpg" class="img-responsive" alt=""> 
+<img src="precision_comparison.jpg"> 
 
 
 
