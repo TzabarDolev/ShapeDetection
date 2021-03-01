@@ -22,16 +22,25 @@ To extract quality measures:<br>
 To show results:
 `python3 show_results.py`
 
+To preperly operate the files you need to have a directory named: results, img, ground_truth and prediction.<br>
+`img` folder will hold the images.<br>
+`ground_truth` folder will hold the ground truth json files
+`prediction` folder will hold the prdictions given
+`results` will gain the results once `python3 main_detection.py` is being operated.
+
 Quality measures metrics chosen:<br>
-<h4>Precision, Recall, IOU</h4><br>
+<h4>Precision, Recall, IOU</h4>
 <h5>Precision: </h5>Precision is the ratio of the number of true positives to the total number of positive predictions. For example, if the model detected 100 trees, and 90 were correct, the precision is 90 percent.<br>
 <h5>Recall: </h5>Recall is the ratio of the number of true positives to the total number of actual (relevant) objects. For example, if the model correctly detects 75 trees in an image, and there are actually 100 trees in the image, the recall is 75 percent.<br>
 <h5>IOU: </h5>The Intersection over Union (IoU) ratio is used as a threshold for determining whether a predicted outcome is a true positive or a false positive. IoU is the amount of overlap between the bounding box around a predicted object and the bounding box around the ground reference data.<br>
 
-<h5>prediction algo: </h5>
-First of all, breaking the images to different images for circles and for triangles (most of the images are obvious - spheres are red and triangles are green. for those who are not - well, that's a sacrifice i'm willing to make. sort of.
+<h5>Prediction algo: </h5>
+First of all, breaking the images to different images for circles and for triangles (most of the images are obvious - spheres are red and triangles are green. for those who are not - well, that's a sacrifice i'm willing to make. sort of. After all, I didn't want to be SOTA, I wanted to do something **good** at somewhat close to 8 hours.<br>
+After I seperated the images I used the triangles alone as a seperate input to locate **lines**, and the entire image to locate circles (the detection was better for the original image than the circles seperated image).<br>
+Detection algo ends with a 
 
 <h5>Things I would have done i i had some spare time:</h5><br>
-1. Add tqdm to long loops
-2. Add legends to graphs
-3. Try again using cv2.findcountours
+1. Add tqdm to long loops<br>
+2. Add legends to graphs<br>
+3. Try again using cv2.findcountours<brt>
+4. Add a code to automatically create the resulats folder if it doesn't exist
