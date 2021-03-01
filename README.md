@@ -45,7 +45,7 @@ Use the **python3 show_results.py** to see the top and worst k predictions, and 
 The comparison graphs were meant to give the trend of the images. So if some local minima appear at some prediction case, it may appear also (only lower minima) at my results case. Basically it can help us understand wether we were correct on the easy spots and wrong at the tough ones, and I think it shows something like this.<br>
 
 <h5>Remark:</h5>
-Ihad to modify your predictions a little bit, because you had bounding boxes that exceeded image pixels, which don't really make sense. So for each case of negetive pixel values or beyond image shape i gave my quality measures corrected values of prediction bounding boxes.<br>
+I had to modify your predictions a little bit, because you had bounding boxes that exceeded image pixels, which don't really make sense. So for each case of negetive pixel values or beyond image shape i gave my quality measures corrected values of prediction bounding boxes.<br>
 
 <h5>Performance:</h5>
 IOU: <br>
