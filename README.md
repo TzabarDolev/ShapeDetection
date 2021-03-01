@@ -51,23 +51,23 @@ Recall: <br>
 
 <h5>Images: </h5>
 Top 5 IOU:
-<img src="IOU_top_k.jpg"> 
+<img src="assets/IOU_top_k.jpg"> 
 Worst 5 IOU:
-<img src="IOU_worst_k.jpg"> 
+<img src="assets/IOU_worst_k.jpg"> 
 IOU comparison:
-<img src="IOU_comparison.jpg"> 
+<img src="assets/IOU_comparison.jpg"> 
 Top 5 precision:
-<img src="precision_top_k.jpg"> 
+<img src="assets/precision_top_k.jpg"> 
 Worst 5 precision:
-<img src="precision_worst_k.jpg"> 
+<img src="assets/precision_worst_k.jpg"> 
 Precision comparison:
-<img src="precision_comparison.jpg"> 
+<img src="assets/precision_comparison.jpg"> 
 Top 5 recall:
-<img src="recall_top_k.jpg"> 
+<img src="assets/recall_top_k.jpg"> 
 Worst 5 recall:
-<img src="recall_worst_k.jpg"> 
+<img src="assets/recall_worst_k.jpg"> 
 Recall comparison:
-<img src="recall_comparison.jpg"> 
+<img src="assets/recall_comparison.jpg"> 
 Recall doesn't look good, but recall calculates TP/(TP+FN), and once almost everything is being marked, there aren't any FN.
 
 
