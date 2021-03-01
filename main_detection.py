@@ -33,11 +33,9 @@ def locate_boundaries(img, img_path):
     results["circle"] = []
     for circle in range(len(circle_location_list)):
         results["circle"].append(circle_location_list[circle])
-    # results["circle"].append(circle_location_list)
     results["triangle"] = []
     for triangle in range(len(triangle_location_list)):
         results["triangle"].append(triangle_location_list[triangle])
-    # results["triangle"].append(triangle_location_list)
 
     filename = 'results/' + img_path[:-4] + '.json'
     with open(filename, 'w') as outfile:

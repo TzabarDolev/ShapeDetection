@@ -100,5 +100,5 @@ if __name__ == '__main__':
     pred_performance = pd.DataFrame(pred_performance)
     pred_performance.to_csv('pred_performance.txt')
     results_performance = pd.DataFrame(results_performance)
-    results_performance.to_csv('results_performace.txt')
+    results_performance.to_csv('results_performance.txt')
 
