@@ -38,7 +38,7 @@ Quality measures metrics chosen:<br>
 First of all, breaking the images to different images for circles and for triangles (most of the images are obvious - spheres are red and triangles are green. for those who are not - well, that's a sacrifice i'm willing to make. sort of. After all, I didn't want to be SOTA, I wanted to do something **good** at somewhat close to 8 hours.<br>
 After I seperated the images I used the triangles alone as a seperate input to locate **lines**, and the entire image to locate circles (the detection was better for the original image than the circles seperated image).<br>
 Detection algo ends with a json dump to the results folder. It's important to create this because I didn't create it automatically (8 hours and so).
-**python3 quality_measures.py** will give you dataframes of all performances in **pred_performance.txt** and **results_performacen.txt**.<br>
+*python3 quality_measures.py* will give you dataframes of all performances in **pred_performance.txt** and **results_performacen.txt**.<br>
 Use the **python3 show_results.py** to see the top and worst k predictions, and also see comparioson graphs. <br>
 The comparison graphs were meant to give the trend of the images. So if some local minima appear at some prediction case, it may appear also (only lower minima) at my results case. Basically it can help us understand wether we were correct on the easy spots and wrong at the tough ones, and I think it shows something like this.
 
