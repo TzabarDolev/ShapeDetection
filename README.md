@@ -49,7 +49,7 @@ Precision: <br>
 Recall: <br>
 
 
-<h5>Images: </h5>
+<h5>Images: (expand to see something useful)</h5>
 Top 5 IOU:
 <img src="assets/IOU_top_k.jpg"> 
 Worst 5 IOU:
