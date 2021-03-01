@@ -54,3 +54,25 @@ Recall: <br>
 2. Add legends to graphs<br>
 3. Try again using cv2.findcountours<br>
 4. Add a code to automatically create the resulats folder if it doesn't exist
+
+<h5>Images: </h5>
+Top 5 IOU:
+(/IOU_top.jpg)
+Worst 5 IOU:
+
+IOU comparison:
+
+Top 5 precision:
+
+Worst 5 precision:
+
+Precision comparison:
+
+Top 5 recall:
+
+Worst 5 recall:
+
+Recall comparison:
+
+
+
