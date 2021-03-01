@@ -9,4 +9,4 @@ git clone https://github.com/TzabarDolev/ShapeDetection.git
 
 Project requirements appear at requirements.txt file
 
-**Usage:
+**Usage:**
