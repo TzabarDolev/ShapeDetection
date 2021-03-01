@@ -45,5 +45,5 @@ The comparison graphs were meant to give the trend of the images. So if some loc
 <h5>Things I would have done i i had some spare time:</h5><br>
 1. Add tqdm to long loops<br>
 2. Add legends to graphs<br>
-3. Try again using cv2.findcountours<brt>
+3. Try again using cv2.findcountours<br>
 4. Add a code to automatically create the resulats folder if it doesn't exist
