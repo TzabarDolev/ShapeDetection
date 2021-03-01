@@ -9,6 +9,9 @@ git clone https://github.com/TzabarDolev/ShapeDetection.git
 
 **Project requirements appear at requirements.txt file**
 
-**Usage:**
+**Usage:**<br>
 To display an image with ground truth, prediction and my results:
 <h6>python3 demo.py</h6>
+
+To apply the detection algo:<br>
+<h6>python3 main_detection.py</h6>
