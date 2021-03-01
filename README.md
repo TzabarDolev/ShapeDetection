@@ -51,26 +51,24 @@ Recall: <br>
 
 <h5>Images: </h5>
 Top 5 IOU:
-(https://github.com/TzabarDolev/ShapeDetection/blob/main/IOU_top_k.jpg?raw=true)<br>
+<img src="IOU_top_k.jpg"> 
 Worst 5 IOU:
-(https://github.com/TzabarDolev/ShapeDetection/blob/main/IOU_worst_k.jpg?raw=true)<br>
+<img src="IOU_worst_k.jpg"> 
 IOU comparison:
-(https://github.com/TzabarDolev/ShapeDetection/blob/main/IOU_comparison.jpg?raw=true)<br>
+<img src="IOU_comparison.jpg"> 
 Top 5 precision:
-(https://github.com/TzabarDolev/ShapeDetection/blob/main/precision_top_k.jpg?raw=true)<br>
+<img src="precision_top_k.jpg"> 
 Worst 5 precision:
-(https://github.com/TzabarDolev/ShapeDetection/blob/main/precision_worst_k.jpg?raw=true)<br>
+<img src="precision_worst_k.jpg"> 
 Precision comparison:
-(https://github.com/TzabarDolev/ShapeDetection/blob/main/precision_comparison.jpg?raw=true)<br>
-Top 5 recall:
-(https://github.com/TzabarDolev/ShapeDetection/blob/main/recall_top_k.jpg?raw=true)<br>
-Worst 5 recall:
-(https://github.com/TzabarDolev/ShapeDetection/blob/main/recall_worst_k.jpg?raw=true)<br>
-Recall comparison:
-(https://github.com/TzabarDolev/ShapeDetection/blob/main/recall_comparison.jpg?raw=true)<br>
-Recall doesn't look good, but recall calculates TP/(TP+FN), and once almost everything is being marked, there aren't any FN.
-
 <img src="precision_comparison.jpg"> 
+Top 5 recall:
+<img src="recall_top_k.jpg"> 
+Worst 5 recall:
+<img src="recall_worst_k.jpg"> 
+Recall comparison:
+<img src="recall_comparison.jpg"> 
+Recall doesn't look good, but recall calculates TP/(TP+FN), and once almost everything is being marked, there aren't any FN.
 
 
 
@@ -78,6 +76,6 @@ Recall doesn't look good, but recall calculates TP/(TP+FN), and once almost ever
 1. Add tqdm to long loops<br>
 2. Add legends to graphs<br>
 3. Try again using cv2.findcountours<br>
-4. Add a code to automatically create the resulats folder if it doesn't exist<br>
+4. Add a code to automatically create the results folder if it doesn't exist<br>
 5. Automate show_results.py file<br>
-6. Create a fast-track for a simngle specific image<br>
+6. Create a fast-track for a single specific image<br>
