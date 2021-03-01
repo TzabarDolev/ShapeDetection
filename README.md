@@ -11,9 +11,7 @@ git clone https://github.com/TzabarDolev/ShapeDetection.git
 
 **Usage:**<br>
 To display an image with ground truth, prediction and my results:
-<h6>python3 demo.py</h6>
+`python3 demo.py`
 
 To apply the detection algo:<br>
-<h6>python3 main_detection.py</h6>
-
-`<python3 main_detection.py>`
+`python3 main_detection.py`
