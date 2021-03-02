@@ -71,7 +71,7 @@ if __name__ == '__main__':
     show_topk(df_results, k_picks)
 
     # plotting graphs
-    x = np.linspace(1, 500, 500)
+    x = np.linspace(1, len(df_results), len(df_results))
     fig, axs = plt.subplots(2, sharex=True, sharey=True)
     fig.suptitle('IOU comparison')
     axs[0].plot(x, df_results["IOU"].values)
