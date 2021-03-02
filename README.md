@@ -85,3 +85,4 @@ Recall doesn't look good, but recall calculates TP/(TP+FN), and once almost ever
 4. Add a code to automatically create folders which don't exist<br>
 5. Automate show_results.py file<br>
 6. Create a fast-track for a single specific image<br>
+7. Add GT and prediction to the k images<br>
