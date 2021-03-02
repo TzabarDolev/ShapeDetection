@@ -57,20 +57,26 @@ Recall: 0.71<br>
 
 <h5>Images: (expand to see something useful)</h5>
 Top 5 IOU:
+<img src="assets/IOU_top_k_GT.jpg"> 
 <img src="assets/IOU_top_k.jpg"> 
 Worst 5 IOU:
+<img src="assets/IOU_worst_k_GT.jpg"> 
 <img src="assets/IOU_worst_k.jpg"> 
 IOU comparison:
-<img src="assets/IOU_comparison.jpg"> 
+<img src="assets/IOU_comparison.jpg">
 Top 5 precision:
+<img src="assets/precision_top_k_GT.jpg"> 
 <img src="assets/precision_top_k.jpg"> 
 Worst 5 precision:
+<img src="assets/precision_worst_k_GT.jpg"> 
 <img src="assets/precision_worst_k.jpg"> 
 Precision comparison:
-<img src="assets/precision_comparison.jpg"> 
+<img src="assets/precision_comparison.jpg">
 Top 5 recall:
-<img src="assets/recall_top_k.jpg"> 
+<img src="assets/recall_top_k_GT.jpg">
+<img src="assets/recall_top_k.jpg">
 Worst 5 recall:
+<img src="assets/recall_worst_k_GT.jpg"> 
 <img src="assets/recall_worst_k.jpg"> 
 Recall comparison:
 <img src="assets/recall_comparison.jpg"> 
@@ -85,4 +91,3 @@ Recall doesn't look good, but recall calculates TP/(TP+FN), and once almost ever
 4. Add a code to automatically create folders which don't exist<br>
 5. Automate show_results.py file<br>
 6. Create a fast-track for a single specific image<br>
-7. Add GT and prediction to the k images<br>
