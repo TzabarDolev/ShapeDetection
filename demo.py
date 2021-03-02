@@ -57,5 +57,5 @@ img = display_BB(img, GT_BB, (255, 0, 0), 2)
 img2 = display_BB(img, pred_BB, (0, 255, 0), 1)
 
 # showing the image with GT and my results
-# img3 = img2 = display_BB(img, results_BB, (0, 0, 255), 1)
+img3 = img2 = display_BB(img, results_BB, (0, 0, 255), 1)
 
