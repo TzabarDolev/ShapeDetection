@@ -85,10 +85,9 @@ Recall doesn't look good, but recall calculates TP/(TP+FN), and once almost ever
 
 
 <h5>Things I would have done i i had some spare time:</h5><br>
-1. Add tqdm to long loops<br>
-2. Add legends to graphs<br>
-3. Try again using cv2.findcountours<br>
-4. Add a code to automatically create folders which don't exist<br>
-5. Automate show_results.py file<br>
-6. Create a fast-track for a single specific image<br>
-7. Add ROC curve
+1. Add legends to graphs<br>
+2. Try again using cv2.findcountours<br>
+3. Add a code to automatically create folders which don't exist<br>
+4. Automate show_results.py file<br>
+5. Create a fast-track for a single specific image<br>
+6. Add ROC curve
