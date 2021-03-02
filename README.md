@@ -44,7 +44,7 @@ I wanted to use simple tools like image gradients and color changes so opencv is
 Detection algo ends with a json dump to the results folder. It's important to create this because I didn't create it automatically (8 hours and so).
 **python3 quality_measures.py** will give you dataframes of all performances in **pred_performance.txt** and **results_performacen.txt**.<br>
 Use the **python3 show_results.py** to see the top and worst k predictions, and also see comparioson graphs. <br>
-The comparison graphs were meant to give the trend of the images. So if some local minima appear at some prediction case, it may appear also (only lower minima) at my results case. Basically it can help us understand wether we were correct on the easy spots and wrong at the tough ones, and I think it shows something like this.<br>
+The comparison graphs were meant to give the trend of the images. So if some local minima appear at some prediction case, it may appear also (only lower minima) at my results case. Basically it can help us understand wether we were correct on the easy spots and wrong at the tough ones, and I think it shows something like this. Also, it can be seen clearrly at the 5 samples example.<br>
 
 <h5>Remark:</h5>
 I had to modify your predictions a little bit, because you had bounding boxes that exceeded image pixels, which don't really make sense. So for each case of negetive pixel values or beyond image shape i gave my quality measures corrected values of prediction bounding boxes.<br>
@@ -63,6 +63,8 @@ Worst 5 IOU:
 <img src="assets/IOU_worst_k_GT.jpg"> 
 <img src="assets/IOU_worst_k.jpg"> 
 IOU comparison:
+IOU comparison:
+<img src="assets/IOU_comparison_example.jpg">
 <img src="assets/IOU_comparison.jpg">
 Top 5 precision:
 <img src="assets/precision_top_k_GT.jpg"> 
@@ -71,6 +73,7 @@ Worst 5 precision:
 <img src="assets/precision_worst_k_GT.jpg"> 
 <img src="assets/precision_worst_k.jpg"> 
 Precision comparison:
+<img src="assets/precision_comparison_example.jpg">
 <img src="assets/precision_comparison.jpg">
 Top 5 recall:
 <img src="assets/recall_top_k_GT.jpg">
@@ -79,7 +82,8 @@ Worst 5 recall:
 <img src="assets/recall_worst_k_GT.jpg"> 
 <img src="assets/recall_worst_k.jpg"> 
 Recall comparison:
-<img src="assets/recall_comparison.jpg"> 
+<img src="assets/recall_comparison_example.jpg">
+<img src="assets/recall_comparison.jpg">
 Recall doesn't look good, but recall calculates TP/(TP+FN), and once almost everything is being marked, there aren't any FN.
 
 
