@@ -63,8 +63,8 @@ def show_topk(df, k):
 
 
 if __name__ == '__main__':
-    file_results = 'results_performance.txt'
-    file_pred = 'pred_performance.txt'
+    file_results = 'assets/results_performance.txt'
+    file_pred = 'assets/pred_performance.txt'
     df_results = pd.read_csv(file_results)
     df_pred = pd.read_csv(file_pred)
     k_picks = 5

@@ -3,8 +3,7 @@ import os
 
 import cv2
 import numpy as np
-
-import tqdm
+from tqdm import tqdm
 
 from shape_detection import detect_lines, detect_circles, seperate_images
 
@@ -45,7 +44,7 @@ def locate_boundaries(img, img_path):
 
 if __name__ == '__main__':
     files = os.listdir('img/')
-    for img_path in files:
+    for img_path in tqdm(files):
         print('analyze image: ' + str(img_path[:-4]))
         img = cv2.imread('img/' + img_path)
         image = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)

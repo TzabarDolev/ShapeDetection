@@ -4,6 +4,7 @@ import os
 import cv2
 import numpy as np
 import pandas as pd
+from tqdm import tqdm
 
 
 def read_json(json_file):
@@ -52,7 +53,7 @@ if __name__ == '__main__':
     pred_precision, results_precision = [], []
     pred_performance = {"image": [], "precision": [], "recall": [], "IOU": []}
     results_performance = {"image": [], "precision": [], "recall": [], "IOU": []}
-    for img_path in files:
+    for img_path in tqdm(files):
         print('analyze image: ' + str(img_path[:-4]))
         img = cv2.imread('img/' + img_path)
         image = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
@@ -94,11 +95,11 @@ if __name__ == '__main__':
     output_score = {"prediction IOU": np.mean(pred_IOU), "results IOU": np.mean(results_IOU),
                     "prediction recall": np.mean(pred_recall), "results recall": np.mean(results_recall),
                     "prediction precision": np.mean(pred_precision), "results precision": np.mean(results_precision)}
-    with open('output_score.txt', 'w') as file:
+    with open('assets/output_score.txt', 'w') as file:
         file.write(json.dumps(output_score))
 
     pred_performance = pd.DataFrame(pred_performance)
-    pred_performance.to_csv('pred_performance.txt')
+    pred_performance.to_csv('assets/pred_performance.txt')
     results_performance = pd.DataFrame(results_performance)
-    results_performance.to_csv('results_performance.txt')
+    results_performance.to_csv('assets/results_performance.txt')
 
