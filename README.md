@@ -63,7 +63,6 @@ Worst 5 IOU:
 <img src="assets/IOU_worst_k_GT.jpg"> 
 <img src="assets/IOU_worst_k.jpg"> 
 IOU comparison:
-IOU comparison:
 <img src="assets/IOU_comparison_example.jpg">
 <img src="assets/IOU_comparison.jpg">
 Top 5 precision:
