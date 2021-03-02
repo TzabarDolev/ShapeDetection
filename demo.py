@@ -41,9 +41,7 @@ img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 # reading the ground truth and prediction
 GT_BB = read_json('ground_truth/' + files[sample][:-4] + '.json')
 pred_BB = read_json('prediction/' + files[sample][:-4] + '.json')
-
-# will work only after running the main_detection.py file
-# results_BB = read_json('results/' + files[sample][:-4] + '.json')
+results_BB = read_json('results/' + files[sample][:-4] + '.json')
 
 
 # showing the image
