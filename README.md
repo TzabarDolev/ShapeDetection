@@ -50,9 +50,14 @@ The comparison graphs were meant to give the trend of the images. So if some loc
 I had to modify your predictions a little bit, because you had bounding boxes that exceeded image pixels, which don't really make sense. So for each case of negetive pixel values or beyond image shape i gave my quality measures corrected values of prediction bounding boxes.<br>
 
 <h5>Performance:</h5>
-IOU: 0.66<br>
-Precision: 0.84<br>
-Recall: 0.71<br>
+IOU: 0.59<br>
+IOU_baseline: 0.67<br>
+
+Precision: 0.90<br>
+Precision_baseline: 0.90<br>
+
+Recall: 0.63<br>
+Recall_baseline: 0.70<br>
 
 
 <h5>Images: (expand to see something useful)</h5>
