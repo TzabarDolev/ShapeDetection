@@ -93,4 +93,5 @@ Recall doesn't look good, but recall calculates TP/(TP+FN), and once almost ever
 3. Add a code to automatically create folders which don't exist<br>
 4. Automate show_results.py file<br>
 5. Create a fast-track for a single specific image<br>
-6. Add ROC curve
+6. Add ROC curve measure
+7. ad non maximum supression for lines detection
