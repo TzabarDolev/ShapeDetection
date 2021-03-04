@@ -1,1 +1,1 @@
-{"prediction IOU": 0.9451912571532858, "results IOU": 0.655970586726264, "prediction recall": 0.9632383895853566, "results recall": 0.7104359651849395, "prediction precision": 0.9753350687154582, "results precision": 0.8357690542517041}
+{"prediction IOU": 0.9451912571532858, "results IOU": 0.5982770359614273, "prediction recall": 0.9632383895853566, "results recall": 0.6441034374400185, "prediction precision": 0.9753350687154582, "results precision": 0.8388475144156627}
