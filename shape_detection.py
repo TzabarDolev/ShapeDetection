@@ -1,5 +1,6 @@
 import cv2
 import numpy as np
+from nms import non_max_suppression
 
 
 def detect_circles(img):
@@ -61,7 +62,8 @@ def detect_lines(img):
     lines_formatted = []
     try:
         lines = np.squeeze(lines, axis=1)
-        for line in lines:
+        lines_nms = non_max_suppression(lines, 0.3)
+        for line in lines_nms:
             lines_formatted.append([[line[0], line[1]], [line[2], line[3]]])
     except:
         print('no lines detected')
