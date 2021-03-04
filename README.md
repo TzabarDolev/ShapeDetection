@@ -99,3 +99,5 @@ Recall doesn't look good, but recall calculates TP/(TP+FN), and once almost ever
 4. Automate show_results.py file<br>
 5. Create a fast-track for a single specific image<br>
 6. Add ROC curve measure<br>
+7. Seperate 20% of ground truth to "train" on it (in terms of how many triangles/circles, sizes, distances and so on<br>
+8. debug non max suppression.<br>
