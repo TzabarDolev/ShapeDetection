@@ -25,7 +25,7 @@ def locate_boundaries(img, img_path):
     circles, triangles = seperate_images(img)
     circle_location_list = detect_circles(img)
     print('circles locations:' + str(circle_location_list))
-    triangle_location_list = detect_lines(triangles)
+    triangle_location_list = detect_lines(img)
     print('triangles locations:' + str(triangle_location_list))
 
     results = {}

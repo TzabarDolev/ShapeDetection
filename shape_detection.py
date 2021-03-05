@@ -11,7 +11,7 @@ def detect_circles(img):
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
     circle_fit = False
-    accum = 1.2
+    accum = 0.5
     # detect circles in the image
     while not circle_fit:
         circles = cv2.HoughCircles(gray, cv2.HOUGH_GRADIENT, accum, 10)
@@ -29,6 +29,7 @@ def detect_circles(img):
 
 def find_BoundingBox(circles, shape):
     circle_location_list = []
+    circles_formatted = []
     try:
         for (x, y, r) in circles:
             # making sure that bounds do not exceed image properties
@@ -51,6 +52,12 @@ def find_BoundingBox(circles, shape):
             circle_location_list.append([[upper_left_x, upper_left_y], [lower_right_x, lower_right_y]])
     except:
         print('no circles detected')
+    # try:
+    #     circle_location_list = non_max_suppression(np.asarray(circle_location_list), 0.3)
+    #     for circle in circle_location_list:
+    #         circles_formatted.append([[circle[0], circle[1]], [circle[2], circle[3]]])
+    # except:
+    #     print('no lines detected')
 
     return circle_location_list
 
@@ -58,11 +65,22 @@ def detect_lines(img):
     print('detecting triangles')
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     edges = cv2.Canny(gray, 10, 50)
-    lines = cv2.HoughLinesP(edges, 1, np.pi/180, 30, maxLineGap=250)
+    # ret, thresh = cv2.threshold(gray, 50, 255, 0)
+    # contours, hierarchy = cv2.findContours(thresh, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+    # contours_formatted = []
+    # for cont in contours:
+    #     cont = np.squeeze(cont, axis=1)
+    #     max_x = max(cont[:, 0])
+    #     max_y = max(cont[:, 1])
+    #     min_x = max(cont[:, 0])
+    #     min_y = max(cont[:, 1])
+    #     contours_formatted.append([[min_x, min_y], [max_x, max_y]])
+    # return contours_formatted
+    lines = cv2.HoughLinesP(edges, 1, np.pi / 180, 30, maxLineGap=250)
     lines_formatted = []
     try:
         lines = np.squeeze(lines, axis=1)
-        lines_nms = non_max_suppression(lines, 0.3)
+        lines_nms = non_max_suppression(lines, 0.9)
         for line in lines_nms:
             lines_formatted.append([[line[0], line[1]], [line[2], line[3]]])
     except:

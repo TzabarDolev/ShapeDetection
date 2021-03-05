@@ -48,7 +48,7 @@ def show_topk(df, k):
             plt.subplot(1, k, plot+1)
             img = cv2.imread(img_path + str(series[data]["image"].values[plot]) + str('.jpg'))
             # adding boung box
-            img = display_BB(img, results_BB, (0, 255, 0), 2)
+            img = display_BB(img, results_BB, (0, 0, 255), 2)
             plt.axis('off')
             plt.imshow(img)
             if data == 0 or data == 1:
