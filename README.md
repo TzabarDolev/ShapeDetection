@@ -37,11 +37,12 @@ Quality measures metrics chosen:<br>
 <h5>IOU: </h5>The Intersection over Union (IoU) ratio is used as a threshold for determining whether a predicted outcome is a true positive or a false positive. IoU is the amount of overlap between the bounding box around a predicted object and the bounding box around the ground reference data.<br>
 
 <h5>Prediction algo: </h5>
-First of all, breaking the images to different images for circles and for triangles (most of the images are obvious - spheres are red and triangles are green. for those who are not - well, that's a sacrifice i'm willing to make. sort of. After all, I didn't want to be SOTA, I wanted to do something **good** at somewhat close to 8 hours.<br>
-After I seperated the images I used the triangles alone as a seperate input to locate **lines** using canny and hough lines, and the entire image to locate circles (the detection was better for the original image than the circles seperated image) using hough circles.<br>
-Finding lines is similar to finding triangles, given that setting a rectangle around a triangle and setting 3 rectangles surrounding each side of it, gives somewhat same area of IOU, and performed better on triangles that weren't exactly clear. Non maximum suppression was added to reduce overlaps.
+First of all, breaking the images to different images for circles and for triangles (most of the images are obvious - spheres are red and triangles are green. for those who are not - well, that's a sacrifice i'm willing to make. sort of. After all, I didn't want to be SOTA, I wanted to do something **good** at somewhat close to 8 hours.<br>**After some experiments it seemed that the original images without the seperation actually performed better, so I commented this section out.**<br>
+I used cv2.HoughLinesP and cv2.Canny edge detection to locate **lines** of the triangles ,and cv2.HoughCircles locate circles.<br>
+Finding lines is similar to finding triangles, given that setting a rectangle around a triangle and setting 3 rectangles surrounding each side of it, gives somewhat same area of IOU, and performed better on triangles that weren't exactly clear. Non maximum suppression was added to reduce overlaps. Finding lines performed better than cv2.findContours for the triangles<br>
+.
 I wanted to use simple tools like image gradients and color changes so opencv is a great catch for these ones. Also, we wanted to stay with *classic computer vision* so we didn't need here some big guns like attention, keypoints and CNNs.<br>
-Detection algo ends with a json dump to the results folder. It's important to create this because I didn't create it automatically (8 hours and so).
+Detection algo ends with a json dump to the results folder. It's important to create the folder because I didn't create it automatically (8 hours and so).
 **python3 quality_measures.py** will give you dataframes of all performances in **pred_performance.txt** and **results_performacen.txt**.<br>
 Use the **python3 show_results.py** to see the top and worst k predictions, and also see comparioson graphs. <br>
 The comparison graphs were meant to give the trend of the images. So if some local minima appear at some prediction case, it may appear also (only lower minima) at my results case. Basically it can help us understand wether we were correct on the easy spots and wrong at the tough ones, and I think it shows something like this. Also, it can be seen clearrly at the 5 samples example.<br>
@@ -50,13 +51,13 @@ The comparison graphs were meant to give the trend of the images. So if some loc
 I had to modify your predictions a little bit, because you had bounding boxes that exceeded image pixels, which don't really make sense. So for each case of negetive pixel values or beyond image shape i gave my quality measures corrected values of prediction bounding boxes.<br>
 
 <h5>Performance:</h5>
-IOU: 0.60<br>
+IOU: 0.74<br>
 IOU_baseline: 0.95<br>
 
-Precision: 0.84<br>
+Precision: 0.86<br>
 Precision_baseline: 0.98<br>
 
-Recall: 0.64<br>
+Recall: 0.83<br>
 Recall_baseline: 0.96<br>
 
 
